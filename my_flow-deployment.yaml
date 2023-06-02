@@ -3,15 +3,21 @@
 ###
 name: mussie
 description: null
-version: cb770c1964ddac4afd329f5ee09e4551
+version: 35f7960cdc06cd84ac6d7fa93707b87e
 # The work queue that will handle this deployment's runs
 work_queue_name: default
-work_pool_name: null
+work_pool_name: default-agent-pool
 tags: []
 parameters: {}
 schedule: null
-is_schedule_active: null
+is_schedule_active: true
 infra_overrides: {}
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: f w t
+manifest_path: null
 infrastructure:
   type: process
   env: {}
@@ -20,16 +26,22 @@ infrastructure:
   command: null
   stream_output: true
   working_dir: null
+  _block_document_id: 6ee790e4-c57a-40e9-83bf-2fe55f38779f
+  _block_document_name: anonymous-e896ccd6-6ded-439f-8d1c-6df546ad4f77
+  _is_anonymous: true
   block_type_slug: process
   _block_type_slug: process
-
-###
-### DO NOT EDIT BELOW THIS LINE
-###
-flow_name: f w t
-manifest_path: null
-storage: null
-path: /home/mussie/Documents/orchestration
+storage:
+  repository: https://github.com/mussiehaile/Prefect-Demo.git
+  reference: null
+  access_token: null
+  include_git_objects: true
+  _block_document_id: f54bfc84-d299-4f5b-b641-02913b0357ae
+  _block_document_name: prefect101
+  _is_anonymous: false
+  block_type_slug: github
+  _block_type_slug: github
+path: ''
 entrypoint: second.py:my_flow
 parameter_openapi_schema:
   title: Parameters
@@ -37,4 +49,4 @@ parameter_openapi_schema:
   properties: {}
   required: null
   definitions: null
-timestamp: '2023-06-02T18:34:49.481982+00:00'
+timestamp: '2023-06-02T19:21:03.851875+00:00'
