@@ -1,0 +1,40 @@
+###
+### A complete description of a Prefect Deployment for flow 'f w t'
+###
+name: mussie
+description: null
+version: cb770c1964ddac4afd329f5ee09e4551
+# The work queue that will handle this deployment's runs
+work_queue_name: default
+work_pool_name: null
+tags: []
+parameters: {}
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: f w t
+manifest_path: null
+storage: null
+path: /home/mussie/Documents/orchestration
+entrypoint: second.py:my_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
+timestamp: '2023-06-02T18:34:49.481982+00:00'
